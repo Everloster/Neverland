@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<port>8099</port>
+    <deployType>release</deployType>
+    <configure-url>/var/www/http/nearme_fs</configure-url>
+    <!-- 192.168.5.172 127.0.0.1 -->
+    <redis-server-getuserinfo-host>192.168.5.172</redis-server-getuserinfo-host>
+    <redis-server-getuserinfo-port>6379</redis-server-getuserinfo-port>
+    <app-key>c5217trjnrmU6gO5jG8VvUFU0</app-key>
+    <app-secret>e2eCa732422245E8891F6555e999878B</app-secret>
+</project>

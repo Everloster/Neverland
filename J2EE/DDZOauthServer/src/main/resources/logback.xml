@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- logback插件 <consolePlugin /> -->
+	<appender name="GCMANAGEMENT_FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/ddz-interface.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>log/gcinterface-%d{yyyy-MM}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>100MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%date %level [%thread] %logger{36} [%file : %line] %msg%n
+			</pattern>
+		</encoder>
+
+	</appender>
+
+	<!-- <appender name="AdminOperate_File"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/admin_operate.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			rollover daily
+			<fileNamePattern>log/admin_operate_%d{yyyy-MM}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				or whenever the file size reaches 100MB
+				<maxFileSize>100MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%date %msg%n</pattern>
+		</encoder>
+	</appender> -->
+	
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+		</layout>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="GCMANAGEMENT_FILE" />
+		<appender-ref ref="stdout" />
+	</root>
+
+	<!-- 管理员操作日志 -->
+	<!-- <logger name="AdminOperate" level="info" additivity="false">
+		<appender-ref ref="AdminOperate_File" />
+	</logger> -->
+</configuration>

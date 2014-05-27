@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.game.u3d.nearme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:icon="@drawable/ic_launcher" >
+        <activity
+            android:name=".UnityEntry"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- activity for sdk -->
+        <activity
+            android:name="com.nearme.gamecenter.open.core.ChargeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.BindActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.WebActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.ProfileSettingActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+        <activity
+            android:name="com.nearme.gamecenter.open.core.ChangePwdActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/nmgc_activitynotfloat" >
+        </activity>
+    </application>
+
+</manifest>

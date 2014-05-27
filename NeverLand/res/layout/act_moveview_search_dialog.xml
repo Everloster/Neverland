@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="match_parent" android:background="@drawable/main_dialog_bg">
+
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:gravity="center_horizontal" android:paddingTop="5.0dip">
+		<TextView android:layout_marginLeft="5dp" android:text="Search"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="@color/black" />
+		<ImageView android:src="@drawable/main_dialog_cancle_image"
+			android:id="@+id/main_dialog_cancle_image"
+			android:layout_alignParentRight="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+
+	<TableLayout android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dp">
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<EditText android:hint="AccountName" android:textColorHint="#006000"
+				android:textSize="12sp" android:layout_height="40dip"
+				android:id="@+id/main_search_accName" android:layout_weight="1"></EditText>
+			<EditText android:hint="ContactName" android:textColorHint="#006000"
+				android:textSize="12sp" android:layout_height="40dip"
+				android:id="@+id/main_search_ctcName" android:layout_weight="1"></EditText>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:gravity="center_horizontal">
+			<EditText android:hint="ProspectDsc" android:textColorHint="#006000"
+				android:textSize="12sp" android:layout_height="40dip"
+				android:id="@+id/main_search_prosDesc" android:layout_weight="1"
+				android:singleLine="true"></EditText>
+			<EditText android:hint="ProspectID" android:textColorHint="#006000"
+				android:textSize="12sp" android:layout_height="40dip"
+				android:id="@+id/main_search_prosId" android:layout_weight="1"
+				android:singleLine="true" android:numeric="integer"></EditText>
+		</TableRow>
+	</TableLayout>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:gravity="center_horizontal" android:paddingTop="5.0dip">
+		<Button android:text="ShowAcitve" android:id="@+id/main_search_active"
+			android:background="@drawable/main_dialog_function_button"
+			android:layout_width="87dp" android:layout_height="wrap_content" />
+		<Button android:text="Search" android:id="@+id/main_search_yes"
+			android:background="@drawable/main_dialog_function_button"
+			android:layout_width="87dp" android:layout_marginLeft="9dp"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	<TableLayout android:layout_marginLeft="8dp"
+		android:layout_marginRight="5dp" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<TextView android:text="Account:" android:textSize="12sp"
+				android:layout_width="65dp" android:layout_height="wrap_content"
+				android:singleLine="true" android:textColor="@color/black"
+				android:gravity="right|center_vertical" />
+			<TextView android:layout_marginLeft="5dp"
+				android:id="@+id/main_accountName_text" android:textSize="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:singleLine="true" android:textColor="#930000" />
+		</TableRow>
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<TextView android:textSize="12sp" android:text="Contact:"
+				android:layout_width="65dp" android:layout_height="wrap_content"
+				android:singleLine="true" android:textColor="@color/black"
+				android:gravity="right|center_vertical" />
+			<TextView android:layout_marginLeft="5dp"
+				android:id="@+id/main_contactName_text" android:textSize="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:singleLine="true" android:textColor="#930000" />
+		</TableRow>
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<TextView android:textSize="12sp" android:text="Description:"
+				android:singleLine="true" android:layout_width="65dp"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:gravity="right|center_vertical" />
+			<TextView android:layout_marginLeft="5dp"
+				android:id="@+id/main_prospectDesc_text" android:textSize="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:singleLine="true" android:textColor="#930000" />
+		</TableRow>
+		<TableRow>
+			<TextView android:gravity="right|center_vertical"
+				android:singleLine="true" android:text="ID:" android:layout_width="65dp"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:textSize="12sp" />
+			<TextView android:layout_marginLeft="5dp"
+				android:id="@+id/main_prospectId_text" android:textSize="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:singleLine="true" android:textColor="#930000" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

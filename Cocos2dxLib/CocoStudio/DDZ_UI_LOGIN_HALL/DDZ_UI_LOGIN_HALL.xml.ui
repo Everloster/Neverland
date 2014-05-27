@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_UI_LOGIN_HALL\DDZ_UI_LOGIN_HALL.xml.ui</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>DDZ_UI_LOGIN_HALL</Name>
+  <ProjectDir>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_UI_LOGIN_HALL</ProjectDir>
+  <JsonFileName>DDZ_UI_LOGIN_HALL.json</JsonFileName>
+  <Resources>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_UI_LOGIN_HALL\Resources</Resources>
+  <JsonFolder>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_UI_LOGIN_HALL\Json</JsonFolder>
+  <JsonList>
+    <string>DDZ_UI_LOGIN_HALL_1.json</string>
+  </JsonList>
+  <imageFileList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>DDZ_UI_LOGIN_HALL_1.json</CurrentUIJson>
+  <CanvasSize>
+    <Width>480</Width>
+    <Height>320</Height>
+  </CanvasSize>
+</UIProject>

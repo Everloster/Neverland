@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, NeverLandActivity!</string>
+    <string name="app_name">NeverLand</string>
+    <string name="last_update">上次更新</string>
+    <string name="begin">Begin</string>
+
+    <string name="for_test_string_long">我打发第三方爱上的发生地方阿斯顿发送到发送到发斯蒂芬阿斯顿发生的发斯蒂芬阿斯顿飞洒的发阿斯顿发送到发生的发送到发送到法撒旦法撒旦法撒旦</string>
+    
+    <string name="view_listview_pulltoref_1">View/ListView/下拉刷新(LinearLayout + ListView)</string>
+    
+    <string name="view_listview_pulltoref_2">View/ListView/下拉刷新(ListView + HeadView)</string>
+    
+    <string name="view_listview_custom_scroller_bar">View/ListView/ListView自定义滚动条</string>
+    
+    <string name="view_listview_sort_drag_1">View/ListView/ListView分组拖拽排序1</string>
+    
+    <string name="view_common_motion">View/Common/Motion表情</string>
+    
+    <string name="view_graphic_handwriting">View/Graphic/HandWriting手写</string>
+    
+    <string name="view_graphic_3ddemo">View/Graphic/3D Demo</string>
+    
+    <string name="view_common_moveview">View/Common/MoveView(可移动的Dialog)</string>
+    
+    <string name="view_common_sliding_draw">View/Common/SlidingDraw(抽屉效果)</string>
+    
+    <string name="view_common_top_view_1">View/Common/TopView(歌词效果)</string>
+    
+    <string name="view_common_slidingmenu">View/Common/SlidingMenu(开源侧滑控件)</string>
+    
+    <string name="view_graphic_page_turn">View/Graphic/PageTurn(贝塞尔曲线翻页效果)</string>
+    
+    <string name="view_common_imageview_rolate">View/Common/磁贴点击下沉倾斜效果(ImageView)</string>
+    
+    <string name="view_graphic_page_turn_2">View/Graphic/PageTurn(GLSurfaceView翻页效果)</string>
+    
+    <string name="view_listview_pinned_header_1">View/ListView/头部固定的ListView1</string>
+    
+    <string name="view_graphic_graph">View/Graphic/开源图表控件</string>
+    
+    <string name="view_listview_sort_drag_2">View/ListView/ListView分组拖拽排序2（开源）</string>
+    
+    <string name="view_common_viewbadger">View/Common/ViewBadger(标记View)</string>
+    
+    <string name="view_listview_pinned_header_2">View/ListView/头部固定的ListView2</string>
+    
+    <string name="view_common_satellite_menu">View/Common/卫星菜单</string>
+    
+    <string name="view_common_plugin_apk">View/Common/动态加载APK</string>
+
+</resources>

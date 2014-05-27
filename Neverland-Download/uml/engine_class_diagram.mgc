@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="org.jabe.neverland.download.core.DownloadEngine" x="89" y="93">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.engine.AbstractMessageTask"
+        x="552" y="427">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="org.jabe.neverland.download.core.engine.CacheDownloadTask"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver"
+            endpointName="mMessageDeliver" kind="Simple"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.engine.CacheDownloadTask"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.engine.MultiThreadTask"
+        x="962" y="389">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="org.jabe.neverland.download.core.engine.AbstractMessageTask"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.engine.DownloadCacheInvoker"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.engine.AbstractMessageTask"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.AbstractMessageDeliver.MessageListener"
+        x="150" y="708">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.engine.CacheDownloadTask"
+        x="939" y="229">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="org.jabe.neverland.download.core.engine.DownloadTask"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.engine.DownloadCacheInvoker"
+            endpointName="mCacheInvoker" kind="Simple"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.AbstractMessageDeliver"
+        x="458" y="613">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver.MessageListener"
+            endpointName="mEngineMessger" kind="Simple"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver.MessageListener"/>
+    </Class>
+    <Class name="org.jabe.neverland.download.core.engine.DownloadTask"
+        x="999" y="2">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.engine.CacheDownloadEngine"
+        x="90" y="383">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="org.jabe.neverland.download.core.DownloadEngine"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.engine.AbstractMessageTask"
+            endpointName="mDownloadTaskMap" kind="Simple"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.DownloadCacheManager"
+            endpointName="mProgressCacheManager" kind="Simple"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver"
+            endpointName="mMessageDeliver" kind="Simple"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver.MessageListener"
+            endpointName="mGlobalMessager" kind="Simple"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.engine.DownloadTask"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.engine.AbstractMessageTask"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.AbstractMessageDeliver"/>
+    </Class>
+    <Class
+        name="org.jabe.neverland.download.core.engine.DownloadCacheInvoker"
+        x="501" y="-16">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="org.jabe.neverland.download.core.DownloadCacheManager"
+            endpointName="mProgressCacheManager" kind="Simple"/>
+        <Communication destinationClassName="org.jabe.neverland.download.core.DownloadCacheManager"/>
+    </Class>
+    <Class name="org.jabe.neverland.download.core.DownloadCacheManager"
+        x="441" y="173">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

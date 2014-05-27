@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GameCenter-Main" default="help" >
+    <echo level="info">Running custom_rules </echo>
+    
+    <property name="icon-res">${basedir}/build-res/${target-phone}/drawable</property>
+    <property name="env-jar-path">${basedir}/build-res/env-jar</property>
+    <property name="libs-path">${basedir}/libs</property>
+    <property name="old-env-jar-file">${libs-path}/env.jar</property>
+    
+    <property name="icon-dir-xxhdpi">${basedir}/res/drawable-xxhdpi/ic_launcher_nearme_gamecenter.png</property>
+    <property name="icon-dir-xhdpi">${basedir}/res/drawable-xhdpi/ic_launcher_nearme_gamecenter.png</property>
+    <property name="icon-dir-hdpi">${basedir}/res/drawable-hdpi/ic_launcher_nearme_gamecenter.png</property>
+    <property name="icon-dir-mdpi">${basedir}/res/drawable-mdpi/ic_launcher_nearme_gamecenter.png</property>
+    
+    <target name="init">
+        <!-- <exec executable="svn" failonerror="true">
+            <arg value="update" />
+        </exec> -->
+        
+    </target>
+    
+    <target name="build-env-release">
+        <delete file="${old-env-jar-file}" ></delete>
+        <copy todir="${libs-path}" overwrite="true">
+           <fileset dir="${env-jar-path}/release">
+              <include name="env.jar" />
+          </fileset>
+       </copy>
+    </target>
+    
+    <target name="build-env-test">
+        <delete file="${old-env-jar-file}" ></delete>
+        <copy todir="${libs-path}" overwrite="true">
+           <fileset dir="${env-jar-path}/test">
+              <include name="env.jar" />
+          </fileset>
+       </copy>
+    </target>
+    
+    <target name="build-env-gamma">
+        <delete file="${old-env-jar-file}" ></delete>
+        <copy todir="${libs-path}" overwrite="true">
+           <fileset dir="${env-jar-path}/gamma">
+              <include name="env.jar" />
+          </fileset>
+       </copy>
+    </target>
+    
+    <target name="svn-update-revert">
+        <!-- 这里木有办法实现，svn的安装地址有空格 ，故在bat里面实现-->
+        <!-- <exec executable="${svn_home}/svn.exe" failonerror="true">
+            <arg value="cleanup" />
+        </exec>
+        <exec executable="${svn_home}/svn.exe" failonerror="true">
+            <arg value="update" />
+        </exec>
+        <exec executable="${svn_home}/svn.exe" failonerror="true">
+            <arg value="revert *" />
+        </exec> -->
+    </target>
+    
+    <target name="delete_all_icon">
+        <echo level="info">being to delete all icon </echo>
+        <delete file="${icon-dir-xxhdpi}" verbose="true"></delete>
+        <delete file="${icon-dir-xhdpi}" verbose="true"></delete>
+        <delete file="${icon-dir-hdpi}" verbose="true"></delete>
+        <delete file="${icon-dir-mdpi}" verbose="true"></delete>
+    </target>
+    
+    <!-- ——————————————————————————————————————我是分割线—————————————————————————————————————— -->
+    
+    <!-- xxhdpi begin -->
+    
+    <target name="icon-copy-xxhdpi" depends="delete_all_icon">
+		<echo level="info">target : ${target-phone}</echo>
+		<property name="icon-dir">${basedir}/res/drawable-xxhdpi</property>
+		<property name="icon-file">${icon-dir}/ic_launcher_nearme_gamecenter.png</property>
+		<delete file="${icon-file}" ></delete>
+		<copy todir="${icon-dir}" overwrite="true">
+           <fileset dir="${icon-res}">
+              <include name="ic_launcher_nearme_gamecenter.png" />
+          </fileset>
+       </copy>
+	</target>
+	
+	<target name="12025"  depends="icon-copy-xxhdpi">
+	</target>
+	
+	<!-- xxhdpi end -->
+	
+	<!-- ——————————————————————————————————————我是分割线—————————————————————————————————————— -->
+	
+	<!-- hdpi begin -->
+	
+	<target name="icon-copy-hdpi" depends="delete_all_icon">
+		<echo level="info">target : ${target-phone}</echo>
+		<property name="icon-dir">${basedir}/res/drawable-hdpi</property>
+		<property name="icon-file">${icon-dir}/ic_launcher_nearme_gamecenter.png</property>
+		<delete file="${icon-file}" ></delete>
+		<copy todir="${icon-dir}" overwrite="true">
+           <fileset dir="${icon-res}">
+              <include name="ic_launcher_nearme_gamecenter.png" />
+          </fileset>
+       </copy>
+	</target>
+	
+	<target name="12009" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="12001" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="11061" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="11075" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="12021" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="12015" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="12053" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="12035" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="13009" depends="icon-copy-hdpi">
+	</target>
+	
+	<target name="12061" depends="icon-copy-hdpi">
+	</target>
+	<!-- hdpi end -->
+	
+	<!-- ——————————————————————————————————————我是分割线—————————————————————————————————————— -->
+	
+	<!-- mdpi begin -->
+	
+	<target name="icon-copy-mdpi" depends="delete_all_icon">
+		<echo level="info">target : ${target-phone}</echo>
+		<property name="icon-dir">${basedir}/res/drawable-mdpi</property>
+		<property name="icon-file">${icon-dir}/ic_launcher_nearme_gamecenter.png</property>
+		<delete file="${icon-file}" ></delete>
+		<copy todir="${icon-dir}" overwrite="true">
+           <fileset dir="${icon-res}">
+              <include name="ic_launcher_nearme_gamecenter.png" />
+          </fileset>
+       </copy>
+	</target>
+	
+	<target name="12033" depends="icon-copy-mdpi">
+	</target>
+	
+	<!-- mdpi end -->
+	
+	<!-- ——————————————————————————————————————我是分割线—————————————————————————————————————— -->
+	
+	<!-- xhdpi begin -->
+	
+	<target name="icon-copy-xhdpi" depends="delete_all_icon">
+		<echo level="info">target : ${target-phone}</echo>
+		<property name="icon-dir">${basedir}/res/drawable-xhdpi</property>
+		<property name="icon-file">${icon-dir}/ic_launcher_nearme_gamecenter.png</property>
+		<delete file="${icon-file}" ></delete>
+		<copy todir="${icon-dir}" overwrite="true">
+           <fileset dir="${icon-res}">
+              <include name="ic_launcher_nearme_gamecenter.png" />
+          </fileset>
+       </copy>
+	</target>
+	
+	<target name="12083" depends="icon-copy-xhdpi">
+	</target>
+	
+	<!-- xhdpi end -->
+</project>

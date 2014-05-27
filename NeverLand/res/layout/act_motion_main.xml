@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/motion_edit"
+        android:layout_width="333px"
+        android:layout_height="49px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/new_msg_input_bg"
+        android:gravity="center_vertical" />
+    
+    <org.jabe.neverland.view.DefaultFaceView
+        android:id="@+id/motion_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/motion_edit"
+        android:background="@drawable/menu_default"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <org.jabe.neverland.view.DragLayer
+            android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="87px" >
+        </org.jabe.neverland.view.DragLayer>
+
+        <org.jabe.neverland.view.PageDisplayView
+            android:id="@+id/page_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </org.jabe.neverland.view.PageDisplayView>
+    </org.jabe.neverland.view.DefaultFaceView>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<SceneProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_ROOM_SCENE\DDZ_ROOM_SCENE.xml.scene</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>DDZ_ROOM_SCENE</Name>
+  <ProjectDir>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_ROOM_SCENE</ProjectDir>
+  <JsonFileName>DDZ_ROOM_SCENE.json</JsonFileName>
+  <Resources>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_ROOM_SCENE\Resources</Resources>
+  <JsonFolder>E:\cocos2d-x-2.2\projects\Cocos2dxLib\CocoStudio\DDZ_ROOM_SCENE\Json</JsonFolder>
+  <JsonList />
+  <CanvasSize>
+    <Width>1280</Width>
+    <Height>720</Height>
+  </CanvasSize>
+  <JSFileList />
+  <DefaultUI_JSList />
+</SceneProject>

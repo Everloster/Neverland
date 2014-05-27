@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-config>
+	<!-- extension0表示业务类型，extension1表示超时设置(ms) -->
+	
+	<!-- APK增量更新-->
+	<requestConfig>
+		<requestUrl>/check_token</requestUrl>
+		<handleClass>com.nearme.gamecenter.ddz.oauth.handler.CoreProxyHandler</handleClass>	
+		<extension0>1</extension0>
+		<extension1>10000</extension1>
+	</requestConfig>
+	
+</web-config>

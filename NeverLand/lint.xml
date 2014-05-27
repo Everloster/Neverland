@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/org/jabe/neverland/plugin/PluginProxyActivity.java" />
+    </issue>
+    <issue id="PxUsage" severity="ignore" />
+    <issue id="TextFields" severity="ignore" />
+    <issue id="UsesMinSdkAttributes">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+</lint>

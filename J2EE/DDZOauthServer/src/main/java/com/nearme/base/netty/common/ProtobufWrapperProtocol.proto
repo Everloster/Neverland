@@ -1,0 +1,43 @@
+package com.nearme.base.netty.common;
+
+option optimize_for = SPEED;
+
+//protoc -I=$SRC_DIR --java_out=$DEST_DIR ProtobufWrapperProtocol.proto
+
+//protoc -I=F:\OPPOGame\nearme_social\Trunk\OBaseTools\NearmeSrc\com\nearme\base\netty\common\ --java_out=source F:\OPPOGame\nearme_social\Trunk\OBaseTools\NearmeSrc\com\nearme\base\netty\common\ProtobufWrapperProtocol.proto
+
+//pb请求实体
+message ProtobufRequest {
+	repeated RequestData requestList = 1;//请求对象
+}
+
+//请求数据
+message RequestData {
+	optional int32 requestType = 1;	//请求类型，根据此类型查找对应的处理对象
+	optional int32 timeout = 2;		//超时时间
+	optional int64 id = 3;			//请求时的id
+	optional string clientIp = 4;	//请求的客户端IP
+	optional bytes requestData = 5;	//请求的字节数组列
+	repeated Header header = 6;		//请求的头信息
+}
+
+//头信息
+message Header {
+	optional string key = 1;
+	optional string value = 2;
+}
+
+//pb返回实体
+message ProtobufResponse {
+	repeated ResponseData responseList = 1;		//请求返回的实体列表
+}
+
+//返回数据
+message ResponseData {
+	optional int32 responseType = 1;	//返回类型
+	optional int32 timeout = 2;			//超时时间
+	optional int64 requestId = 3;				//请求时的id
+	optional int32 code = 4 [default = 0];	//返回的编码
+	optional string message = 5;			//返回的信息(错误信息之类)
+	optional bytes responseData = 6;		//请求返回的实体列表
+}
