@@ -87,7 +87,7 @@ public class SlidingDrawActivity extends Activity {
   
             ResolveInfo ri = apps.get(position);  
             imageView.setImageDrawable(ri.activityInfo  
-                    .loadIcon(getPackageManager()));  
+                    .loadIcon(getPackageManager())); 
   
             return imageView;  
         }  
