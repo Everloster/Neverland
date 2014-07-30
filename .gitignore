@@ -2,3 +2,6 @@
 NeverLand/.classpath
 
 *.prefs
+*.o
+*.a
+*.exe

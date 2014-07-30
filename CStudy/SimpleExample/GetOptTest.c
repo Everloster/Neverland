@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* The ENVIRON variable contains the environment. */
-extern char** environ;
 /* The name of this program. */
 const char* program_name;
+
+void printEnv();
 /* Prints usage information for this program to STREAM (typically
 stdout or stderr), and exit the program with EXIT_CODE. Does not
 return. */
@@ -41,7 +41,8 @@ standard output. */
 /* Remember the name of the program, to incorporate in messages.
 The name is stored in argv[0]. */
 	program_name = argv[0];
-	do {
+	do 
+	{
 		next_option = getopt_long (argc, argv, short_options,
 			long_options, NULL);
 		switch (next_option)
@@ -77,9 +78,7 @@ if (verbose)
 	for (i = optind; i < argc; ++i)
 		printf ("Argument: %s\n", argv[i]);
 }
-char** var;
-for (var = environ; *var != NULL; ++var)
-	printf ("%s\n", *var);
+printEnv();
 /* The main program goes here. */
 return 0;
 }
