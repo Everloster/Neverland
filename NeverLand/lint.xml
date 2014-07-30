@@ -4,8 +4,14 @@
     <issue id="NewApi" severity="ignore">
         <ignore path="src/org/jabe/neverland/plugin/PluginProxyActivity.java" />
     </issue>
+    <issue id="ProtectedPermissions">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
     <issue id="PxUsage" severity="ignore" />
     <issue id="TextFields" severity="ignore" />
+    <issue id="UseSparseArrays">
+        <ignore path="src/org/jabe/neverland/autoinstall/AutoInstallHelper.java" />
+    </issue>
     <issue id="UsesMinSdkAttributes">
         <ignore path="AndroidManifest.xml" />
     </issue>

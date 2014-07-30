@@ -8,6 +8,7 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -29,10 +30,12 @@
     <uses-permission android:name="android.permission.NFC" />
 
     <application
+        android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" android:allowBackup="false">
-        
-        <!-- <activity
+        android:label="@string/app_name" >
+
+        <!--
+        <activity
             android:name=".NeverLandActivity" android:theme="@android:style/Theme.Holo.Light"
             android:label="@string/app_name" >
             <intent-filter>
@@ -40,128 +43,158 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> -->
-        
-        <activity android:name="ApiDemos" android:theme="@android:style/Theme.Holo.Light" android:label="@string/app_name">
+        </activity>
+        -->
+
+        <activity
+            android:name="ApiDemos"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.PullRefreshActivity" android:label="@string/view_listview_pulltoref_1" >
+        <activity
+            android:name=".activity.PullRefreshActivity"
+            android:label="@string/view_listview_pulltoref_1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.PullRefreshListviewActivity" android:label="@string/view_listview_pulltoref_2" >
+        <activity
+            android:name=".activity.PullRefreshListviewActivity"
+            android:label="@string/view_listview_pulltoref_2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        
-        <activity android:name=".activity.FastScrollerActivity" android:label="@string/view_listview_custom_scroller_bar">
-           	<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        
-        <activity android:name=".activity.DragListActivity" android:label="@string/view_listview_sort_drag_1" >
+        <activity
+            android:name=".activity.FastScrollerActivity"
+            android:label="@string/view_listview_custom_scroller_bar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.DragActivity">
-        </activity>
-        <activity android:name=".activity.MotionActivity" android:label="@string/view_common_motion">
+        <activity
+            android:name=".activity.DragListActivity"
+            android:label="@string/view_listview_sort_drag_1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
+        <activity android:name=".activity.DragActivity" >
+        </activity>
+        <activity
+            android:name=".activity.MotionActivity"
+            android:label="@string/view_common_motion" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.DownloadActivity" >
         </activity>
-        
         <activity android:name=".activity.SurfaceViewActivity" >
         </activity>
-        
-        <activity android:name=".activity.HandWriterActivity" android:label="@string/view_graphic_handwriting">
+        <activity
+            android:name=".activity.HandWriterActivity"
+            android:label="@string/view_graphic_handwriting" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.CircleActivity" android:label="@string/view_graphic_3ddemo">
+        <activity
+            android:name=".activity.CircleActivity"
+            android:label="@string/view_graphic_3ddemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.SlidingDrawActivity" android:label="@string/view_common_sliding_draw">
+        <activity
+            android:name=".activity.SlidingDrawActivity"
+            android:label="@string/view_common_sliding_draw" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        
-        <activity android:name=".activity.MoveViewDemo" android:label="@string/view_common_moveview">
+        <activity
+            android:name=".activity.MoveViewDemo"
+            android:label="@string/view_common_moveview" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        
-        <activity android:name=".activity.TopFrameActivity" android:label="@string/view_common_top_view_1">
+        <activity
+            android:name=".activity.TopFrameActivity"
+            android:label="@string/view_common_top_view_1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.SlidingTestActivity" android:label="@string/view_common_slidingmenu">
+        <activity
+            android:name=".activity.SlidingTestActivity"
+            android:label="@string/view_common_slidingmenu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.PageTurnActivity" android:label="@string/view_graphic_page_turn">
+        <activity
+            android:name=".activity.PageTurnActivity"
+            android:label="@string/view_graphic_page_turn" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.RolateAnimActivity" android:label="@string/view_common_imageview_rolate">
+        <activity
+            android:name=".activity.RolateAnimActivity"
+            android:label="@string/view_common_imageview_rolate" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".activity.CurlActivity" android:label="@string/view_graphic_page_turn_2">
+        <activity
+            android:name=".activity.CurlActivity"
+            android:label="@string/view_graphic_page_turn_2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="com.jjoe64.graphviewdemos.MainActivity" android:label="@string/view_graphic_graph">
+        <activity
+            android:name="com.jjoe64.graphviewdemos.MainActivity"
+            android:label="@string/view_graphic_graph" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
@@ -173,69 +206,91 @@
         </activity>
         <activity android:name="com.jjoe64.graphviewdemos.AdvancedGraph" >
         </activity>
-        
-        <activity android:name="com.mobeta.android.demodslv.Launcher" android:label="@string/view_listview_sort_drag_2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        
-        <activity android:name="com.mobeta.android.demodslv.TestBedDSLV"
-                  android:label="Basic usage" />
-        <activity android:name="com.mobeta.android.demodslv.ArbItemSizeDSLV"
-                  android:label="Arbitrary item heights" />
-        <activity android:name="com.mobeta.android.demodslv.WarpDSLV"
-                  android:label="Warp" />
-        <activity android:name="com.mobeta.android.demodslv.BGHandle"
-                  android:label="Background handle" />
-        <activity android:name="com.mobeta.android.demodslv.Sections"
-                  android:label="Sections" />
-        <activity android:name="com.mobeta.android.demodslv.CursorDSLV"
-                  android:label="Cursor-backed" />
-        
-        <activity android:name="viewbadger.demo.DemoActivity" android:label="@string/view_common_viewbadger">
-        </activity>
-        <activity android:name="za.co.immedia.pinnedheaderlistviewexample.MainActivity" android:label="@string/view_listview_pinned_header_1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        
-        <activity android:name="com.hb.examples.PinnedSectionListActivity" android:label="@string/view_listview_pinned_header_2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        
-        <activity android:name="android.view.ext.SatelliteMenuActivity" android:label="@string/view_common_satellite_menu">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        
-        <activity android:name="com.nearme.webview.plugin.test.TestMainActivity" android:label="@string/view_common_plugin_apk">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-        
         <activity
-            android:name="com.nearme.webview.plugin.PluginActivity">
+            android:name="com.mobeta.android.demodslv.Launcher"
+            android:label="@string/view_listview_sort_drag_2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
         </activity>
-        
-        
-        <activity android:name="com.stericson.RootTools.test.SanityCheckRootTools">
+        <activity
+            android:name="com.mobeta.android.demodslv.TestBedDSLV"
+            android:label="Basic usage" />
+        <activity
+            android:name="com.mobeta.android.demodslv.ArbItemSizeDSLV"
+            android:label="Arbitrary item heights" />
+        <activity
+            android:name="com.mobeta.android.demodslv.WarpDSLV"
+            android:label="Warp" />
+        <activity
+            android:name="com.mobeta.android.demodslv.BGHandle"
+            android:label="Background handle" />
+        <activity
+            android:name="com.mobeta.android.demodslv.Sections"
+            android:label="Sections" />
+        <activity
+            android:name="com.mobeta.android.demodslv.CursorDSLV"
+            android:label="Cursor-backed" />
+        <activity
+            android:name="viewbadger.demo.DemoActivity"
+            android:label="@string/view_common_viewbadger" >
         </activity>
-         <activity android:name=".activity.MenuTestActivity" >
+        <activity
+            android:name="za.co.immedia.pinnedheaderlistviewexample.MainActivity"
+            android:label="@string/view_listview_pinned_header_1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hb.examples.PinnedSectionListActivity"
+            android:label="@string/view_listview_pinned_header_2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="android.view.ext.SatelliteMenuActivity"
+            android:label="@string/view_common_satellite_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nearme.webview.plugin.test.TestMainActivity"
+            android:label="@string/view_common_plugin_apk" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nearme.webview.plugin.PluginActivity" >
+        </activity>
+        <activity android:name="com.stericson.RootTools.test.SanityCheckRootTools" >
+        </activity>
+        <activity android:name=".activity.MenuTestActivity" >
         </activity>
         <activity android:name=".activity.ProgressTestActivity" >
         </activity>
         <activity android:name=".activity.ColClockAdjustActivity" >
+        </activity>
+        <activity
+            android:name="org.jabe.neverland.autoinstall.AutoActivity"
+            android:label="@string/app_autoinstall" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="org.jabe.neverland.intent.category.SAMPLE_CODE" />
+            </intent-filter>
         </activity>
     </application>
 

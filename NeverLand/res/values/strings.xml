@@ -49,5 +49,7 @@
     <string name="view_common_satellite_menu">View/Common/卫星菜单</string>
     
     <string name="view_common_plugin_apk">View/Common/动态加载APK</string>
+    
+    <string name="app_autoinstall">App/AutoInstall</string>
 
 </resources>
