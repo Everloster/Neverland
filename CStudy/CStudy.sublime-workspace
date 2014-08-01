@@ -1,0 +1,383 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Get",
+				"GetOptTest"
+			],
+			[
+				"fr",
+				"fprintf	fprintf …"
+			],
+			[
+				"get",
+				"GetEnvTest"
+			],
+			[
+				"s",
+				"stderr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "SimpleExample/Makefile",
+			"settings":
+			{
+				"buffer_size": 482,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SimpleExample/GetEnvTest.c",
+			"settings":
+			{
+				"buffer_size": 339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SimpleExample/GetOptTest.c",
+			"settings":
+			{
+				"buffer_size": 2542,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jabe/Neverland/CStudy/SimpleExample/LoadSoTest.c",
+		"/Users/jabe/Neverland/CStudy/ALP-listings/chapter-3/Makefile",
+		"/Users/jabe/Neverland/CStudy/SimpleExample/GetOptTest",
+		"/Users/jabe/Neverland/CStudy/Makefile",
+		"/Users/jabe/android_source_4.4.4_r2/.repo/manifest.xml",
+		"/Users/jabe/Work/FrameworkBase/cmds/pm/src/com/android/commands/pm/Pm.java",
+		"/Users/jabe/.gitconfig",
+		"/Users/jabe/.ssh/config",
+		"/Users/jabe/Neverland/.gitignore",
+		"/Users/jabe/Work/FrameworkBase/core/java/android/content/pm/PackageManager.java",
+		"/Users/jabe/Neverland/config",
+		"/Users/jabe/Neverland/.git/.gitingore",
+		"/Users/jabe/Work/FrameworkBase/frameworkbase.sublime-workspace",
+		"/Users/jabe/Work/PackageInstaller/src/com/android/packageinstaller/CaffeinatedScrollView.java",
+		"/Users/jabe/Work/PackageInstaller/res/layout/uninstall_progress.xml",
+		"/Users/jabe/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jabe/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jabe/Work/PackageInstaller/AndroidManifest.xml",
+		"/Users/jabe/Work/PackageInstaller/Android",
+		"/Users/jabe/Downloads/logcat.log",
+		"/Users/jabe/Downloads/error.log (1)/error.log",
+		"/Users/jabe/Work/tools/eclipse/configuration/config.ini",
+		"/Users/jabe/Work/RootTools/RootTools/project.properties",
+		"/Users/jabe/Work/RootTools/RootTools/.project",
+		"/Users/jabe/Work/RootTools/RootTools/o",
+		"/Users/jabe/.bash_profile",
+		"/Users/jabe/Work/tools/adt-bundle-mac-x86_64-20140321/eclipse/configuration/config.ini",
+		"/Users/jabe/Work/wallet_new/.git/config",
+		"/Users/jabe/Downloads/360MobileSafe_5.2.3.1061/AndroidManifest.xml",
+		"/Users/jabe/Downloads/tencentmobilemanager/AndroidManifest.xml",
+		"/Users/jabe/Neverland/CStudy/SimpleExample/GetEnvTest.c",
+		"/Users/jabe/Neverland/CStudy/SimpleExample/GetOptTest.c",
+		"/Users/jabe/Work/wallet_new/.git/confgi",
+		"/Users/jabe/Work/wallet_new/bin/.git/config",
+		"/Users/jabe/Neverland/CStudy/SimpleExample/Test.c",
+		"/Users/jabe/Neverland/.git/config",
+		"/Users/jabe/Work/workspace_c/Test.c",
+		"/Users/jabe/Downloads/anrTrace1405952089392.txt",
+		"/Users/jabe/Work/volley/.git/config",
+		"/Users/jabe/Work/百度云同步盘/我的文档/work/Shared/doc/moneyshield_code_templates_v1.0.xml",
+		"/Users/jabe/Work/tools/adt-bundle-mac-x86_64-20140321/sdk/tools/proguard/proguard-android.txt",
+		"/Users/jabe/Work/tools/adt-bundle-mac-x86_64-20140321/sdk/tools/ant/build.xml",
+		"/.bash_pro",
+		"/Users/jabe/Downloads/attachment_3512_1404979398.xlsx.txt",
+		"/Users/jabe/Work/百度云同步盘/我的文档/life/Security/password.txt",
+		"/Users/jabe/Work/tools/goagent-goagent-e2f89d4/local/proxy.ini",
+		"/Users/jabe/Work/tools/goagent-goagent-9b0cd10/README.md",
+		"/Users/jabe/log.txt",
+		"/etc/hosts",
+		"/Users/jabe/Work/tools/goagent-goagent-e2f89d4/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	void (*test)() = dlsym (handle, “printEnv”);\n				\n",
+			"	\n",
+			"unknow",
+			"unknew",
+			"install_failed",
+			"INSTALL_FAILED_",
+			"PackageInstallObserver",
+			"PackageInstallObserver'",
+			"getScheme",
+			"mInstallFlowAnalytics",
+			"oncreate",
+			"com.ali.mo",
+			"com.ali.moneh",
+			"com.ali.",
+			"com.ali.money",
+			"android:process",
+			"print_usage",
+			"optarg",
+			"next_option",
+			")\n",
+			");\n",
+			"];\n",
+			"argv",
+			"program_name",
+			"getopt_long",
+			"next_option",
+			".\n",
+			";\n",
+			"’",
+			"‘",
+			"”",
+			"“",
+			"钱包保镖二期PRD2.0.docx\n钱包保镖二期PRD2.0.docx\noptarg",
+			"钱包保镖二期PRD2.0.docx\n",
+			"fetch",
+			"oppo",
+			"proguard",
+			"progurard",
+			"out.absolute.dir",
+			"proguard.config",
+			"${proguard.config}",
+			"proguard.configpath",
+			"proguard",
+			"com.ali.money",
+			"com.ali",
+			"activity",
+			"set",
+			"layout"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "SimpleExample/Makefile",
+					"settings":
+					{
+						"buffer_size": 482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "SimpleExample/GetEnvTest.c",
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "SimpleExample/GetOptTest.c",
+					"settings":
+					{
+						"buffer_size": 2542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1828,
+								1828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 565.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.workspace_c":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pm.java",
+				"FrameworkBase/cmds/pm/src/com/android/commands/pm/Pm.java"
+			],
+			[
+				"packagemana",
+				"FrameworkBase/core/java/android/content/pm/PackageManager.java"
+			],
+			[
+				"installprogress",
+				"res/layout/uninstall_progress.xml"
+			],
+			[
+				"install_start",
+				"res/layout/install_start.xml"
+			],
+			[
+				"packageut",
+				"src/com/android/packageinstaller/PackageUtil.java"
+			],
+			[
+				"minstallflowanalytics",
+				"src/com/android/packageinstaller/InstallFlowAnalytics.java"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true
+}

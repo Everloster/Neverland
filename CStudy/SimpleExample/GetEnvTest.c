@@ -16,4 +16,5 @@ void printEnv()
 	char** var;
 	for (var = environ; *var != NULL; ++var)
 		printf ("%s\n", *var);
+	fprintf(stdout, "Hello, I'am Jabe.\n");
 }

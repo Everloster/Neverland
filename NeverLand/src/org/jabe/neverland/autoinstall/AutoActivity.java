@@ -41,6 +41,7 @@ public class AutoActivity extends Activity {
 
 	private TextView mDesription;
 	private Button mButton;
+	private Button mUninstallButton;
 
 	/*
 	 * (non-Javadoc)
@@ -60,17 +61,13 @@ public class AutoActivity extends Activity {
 		mDesription = new TextView(this);
 		mDesription.setTextColor(Color.WHITE);
 		mDesription.setTextSize(20);
-		mDesription.setText("This is a test for auto install an apk file.");
+		mDesription.setText("This is a test for auto install/uninstall an apk file.");
 
 		mButton = new Button(this);
 
 		mButton.setText("TryAutoInstall");
 		final LinearLayout.LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT,
 				LayoutParams.WRAP_CONTENT);
-
-		content.addView(mButton, params);
-		content.addView(mDesription, params);
-
 		mButton.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -91,10 +88,33 @@ public class AutoActivity extends Activity {
 			}
 
 		});
+		
+		mUninstallButton = new Button(this);
+		mUninstallButton.setText("TryUninstall");
+		mUninstallButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if (v == mUninstallButton) {
+					if (RootTools.isRootAvailable()) {
+						if (upgradeRootPermission(getPackageCodePath())) {
+							tryRandomUninstall();
+						} else {
+							mDesription.setText("request root failure!");
+						}
+					} else {
+						mDesription.setText("device is not root!");
+					}
+				}
+			}
+		});
 
+		content.addView(mButton, params);
+		content.addView(mUninstallButton, params);
+		content.addView(mDesription, params);
 	}
 
-	private boolean useHelper = true;
+	private boolean useHelper = false;
 
 	private void tryRandomInstall() {
 		final ProgressDialog dialog = ProgressDialog.show(AutoActivity.this, "加载中", "Loading");
@@ -109,6 +129,43 @@ public class AutoActivity extends Activity {
 				} else {
 					usePackageUtil(dialog, pkg);
 				}
+
+				break;
+			}
+		}
+	}
+	
+	private void tryRandomUninstall() {
+		final ProgressDialog dialog = ProgressDialog.show(AutoActivity.this, "加载中", "Loading");
+		final PackageManager pm = AutoActivity.this.getPackageManager();
+		List<PackageInfo> packages = pm.getInstalledPackages(0);
+		for (PackageInfo packageInfo : packages) {
+			final PackageInfo pkg = packageInfo;
+			if ((packageInfo.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0) {
+
+				final Handler handler = new Handler(Looper.getMainLooper()) {
+
+					@Override
+					public void dispatchMessage(Message msg) {
+						dialog.dismiss();
+						mDesription.setText("Uninstall Result :" + (msg.what == 1 ? "success" : msg.what)
+								+ " [" + pkg.packageName + "]");
+						mDesription.append(" message [" + msg.what + "]");
+					}
+				};
+				
+				final Runnable r = new Runnable() {
+
+					@Override
+					public void run() {
+						int result = PackageUtils.uninstallSilent(AutoActivity.this, pkg.packageName);
+						final Message msg = handler.obtainMessage();
+						msg.what = result;
+						msg.sendToTarget();
+					}
+				};
+				
+				new Thread(r).start();
 
 				break;
 			}
