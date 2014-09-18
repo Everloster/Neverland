@@ -1,4 +1,4 @@
-﻿package org.jabe.neverland.energycurve;
+package org.jabe.neverland.energycurve;
 
 import java.util.ArrayList;
 

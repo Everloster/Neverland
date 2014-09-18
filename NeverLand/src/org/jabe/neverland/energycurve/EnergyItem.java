@@ -1,4 +1,4 @@
-﻿package org.jabe.neverland.energycurve;
+package org.jabe.neverland.energycurve;
 
 /**
  * 能耗 Bean

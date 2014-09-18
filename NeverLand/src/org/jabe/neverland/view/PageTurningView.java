@@ -1,4 +1,4 @@
-﻿package org.jabe.neverland.view;
+package org.jabe.neverland.view;
 
 
 import org.jabe.neverland.R;

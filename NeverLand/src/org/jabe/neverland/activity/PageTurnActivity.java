@@ -1,4 +1,4 @@
-﻿package org.jabe.neverland.activity;
+package org.jabe.neverland.activity;
 
 import org.jabe.neverland.view.PageTurningView;
 

@@ -1,4 +1,4 @@
-﻿package org.jabe.neverland.energycurve;
+package org.jabe.neverland.energycurve;
 
 public interface EnergyType {
 	public static final int DAY=1;

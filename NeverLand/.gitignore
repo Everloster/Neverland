@@ -1,2 +1,9 @@
 /bin/
 /gen/
+/gradle/
+/build/
+/.gradle/
+/.idea/
+/gradlew
+/gradlew.bat
+/NeverLand.iml
