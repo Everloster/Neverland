@@ -5,3 +5,4 @@ NeverLand/.classpath
 *.o
 *.a
 *.exe
+.DS_Store
